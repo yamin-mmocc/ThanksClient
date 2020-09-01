@@ -6,7 +6,9 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - Thanks Card System</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -39,33 +41,36 @@
         </asp:ScriptManager>
 
         <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
+            
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">MMOCC Thanks Card System</a> 
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/Home">Home <i class="fa fa-home"></i></a></li>
+                        <li><a runat="server" href="~/UserList">User List&nbsp;<i class="fas fa-user-friends"></i></a></li>
+                        <li><a runat="server" href="~/DeptList">Department List&nbsp;<i class="fas fa-briefcase"></i></a></li>
+                        <li><a runat="server" href="~/CardList">Card List&nbsp;<i class="fas fa-list-ul"></i></a></li> 
                     </ul>
+                    <div class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="~/Login" style="font-size:17px"><strong>Logout&nbsp;<i class="fa fa-sign-out-alt" style="font-size:17px"></i></strong></a></li>    
+                    </div>
                 </div>
-            </div>
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+            
+            
         </div>
-
+        <footer class="navbar-inverse1 navbar-fixed-bottom">
+            <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+        </footer>
     </form>
 </body>
 </html>

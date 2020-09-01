@@ -1409,7 +1409,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333333;
-    background-color: #EAE287;
+    background-color: #EAE2B7;
 }
 
 input,
@@ -5279,7 +5279,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top {
     top: 0;
     border-width: 0 0 1px;
-    height: 70px;
 }
 
 .navbar-fixed-bottom {
@@ -5701,13 +5700,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 
 .navbar-inverse {
-    background-color: #F77F00;
-    border-color: #FAE2B7;
+    background-color: #f77f00;
+    border-color: #f77f00;
 }
 
-.navbar-inverse1 {
+.navbar-inverse-bottom {
     background-color: #FCBF49;
     border-color: #FAE2B7;
+    position:fixed;
+    text-align:center;
 }
 
 .navbar-inverse .navbar-brand {
@@ -5721,11 +5722,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 
 .navbar-inverse .navbar-text {
-    color: #003049;
+    color: #9d9d9d;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #003049;
+    color: #003949;
 }
 
     .navbar-inverse .navbar-nav > li > a:hover,
@@ -6178,7 +6179,6 @@ a.badge:focus {
 
 .jumbotron .container {
     max-width: 100%;
-    d near-gradient(45de
 }
 
 @media screen and (min-width: 768px) {
@@ -8276,15 +8276,10 @@ button.close {
         display: none !important;
     }
 }
-
-.logout-button {
-    position: relative;
-    top: 50%;
-}
+/*# sourceMappingURL=bootstrap.css.map */
+/*added*/
 
 .container {
     width: 100%;
-    background-color: #FCBF49;
+    background-color: #EAE2B7;
 }
-
-/*# sourceMappingURL=bootstrap.css.map */

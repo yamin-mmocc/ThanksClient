@@ -54,18 +54,56 @@
                         <li><a runat="server" href="~/Login" style="font-size:17px"><strong>Logout&nbsp;<i class="fa fa-sign-out-alt" style="font-size:17px"></i></strong></a></li>    
                     </div>
                 </div>
+            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="sidebar-sticky">
+                         <ul class="nav flex-column">
+                            <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                            <span data-feather="home"></span>
+                                 Compose <span class="sr-only">(current)</span>
+                             </a>
+                             </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">
+                              <span data-feather="file"></span>
+                              Inbox
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                              <span data-feather="shopping-cart"></span>
+                              Sent
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                              <span data-feather="users"></span>
+                              Score
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                           <a class="nav-link" href="#">
+                              <span data-feather="bar-chart-2"></span>
+                              Users
+                            </a>
+                          </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        <div class="container">
-            <div class="container body-content">
-                <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                </asp:ContentPlaceHolder>
-                <%--<hr />--%>
-            </div>
-            <footer class="navbar-inverse-bottom navbar-fixed-bottom">
-                    <p>&copy; <%: DateTime.Now.Year %> - Thanks Card System by Team Alpha</p>
-           </footer>
-       </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <div class="container body-content">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <%--<hr />--%>
+                         </div>
+                    </div>
+                </div>
+             </div>
+         </div>   
     </form>
 </body>
     

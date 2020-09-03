@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="CardList.aspx.cs" Inherits="ThanksClient.CardList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Card</h1>
+    <h1>Card
+        
+    </h1>
+    <div class="nav navbar-nav navbar-right">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalAddCard"><ion-icon name="add"></ion-icon>&nbsp;Add New</button>
+        </div>
     <table class="table">
       <thead>
         <tr>

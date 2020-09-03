@@ -111,9 +111,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Navigation.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Pages\Compose.aspx" />
     <Content Include="Pages\DeptList.aspx" />
     <Content Include="Pages\Inbox.aspx" />
     <Content Include="favicon.ico" />
@@ -4141,13 +4139,6 @@
     </Compile>
     <Compile Include="Pages\CardList.aspx.designer.cs">
       <DependentUpon>CardList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Compose.aspx.cs">
-      <DependentUpon>Compose.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\Compose.aspx.designer.cs">
-      <DependentUpon>Compose.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\DeptList.aspx.cs">
       <DependentUpon>DeptList.aspx</DependentUpon>

@@ -1,0 +1,38 @@
+﻿:root {
+    --main: #F77F00;
+}
+
+#tcs-nav .navbar-brand {
+    color: var(--main);
+}
+
+#tcs-sidebar {
+    position: fixed;
+    z-index: 100;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background:var(--main);
+}
+#tcs-sidebar .side-sticky {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#tcs-sidebar .nav-item{
+    margin-bottom: 0.25rem;
+}
+#tcs-sidebar .nav-item .nav-link {
+    font-size: 1.2rem;
+    color:#FFFFFF;
+}
+#tcs-sidebar .nav-item .nav-link:hover{
+    background:#ffffff;
+    color:var(--main);
+}
+#tcs-sidebar .nav-item .active{
+    background:#ffffff;
+    color:var(--main);
+}
+#tcs-sidebar ion-icon{
+    font-size: 1.5rem;
+}

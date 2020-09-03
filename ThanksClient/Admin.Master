@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Thanks Card System</title>
 
-     <%---myatsu added--%>
-    <link href="Content/bootstrap.css" rel="stylesheet" />  
-    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />         
+     <%---Bootstrap 4.5 --%>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <%-- Custom --%>
+    <link href="Content/Custom.css" rel="stylesheet" />
     
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
+
     <webopt:bundlereference runat="server" path="~/Content/css" />
+
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
 </head>
 <body>
     <form runat="server">
@@ -33,87 +37,69 @@
                 <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <%--<asp:ScriptReference Name="ionicons.js" Assembly="System.Web" Path="~/lib/ionicons/ionicons.js" />--%>
                 
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server"><strong style="font-size:24px;">MMOCC-TCS</strong></a> 
-                </div>
-                <div class="navbar-collapse collapse">
-                    <div class="nav navbar-nav navbar-right">
-                        <li><a runat="server" href="~/Login" style="font-size:17px"><strong>Logout&nbsp;<i class="fa fa-sign-out-alt" style="font-size:17px"></i></strong></a></li>    
-                    </div>
-                </div>
-            </div>
+
+       <%-- Start Navbar --%>
+        <nav id="tcs-nav" class="navbar stick-top navbar-light bg-light shadow">
+            <a class="navbar-brand col-2 mr-0 px-3">MMOCC-TCS</a>
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                  <a class="nav-link" href="#">Sign out</a>
+                </li>
+              </ul>
+        </nav>
+       <%-- End Navbar --%>
+
+       <%-- Start Sidebar --%>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2">
-                    <div class="sidebar-sticky">
-                         <ul class="nav flex-column">
+                <nav id="tcs-sidebar" class="col-2 ">
+                    <div class="side-sticky pt-3">
+                        <ul class="nav flex-column">
                             <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                            <button type="button" class="btn btn-primary btn-lg"><ion-icon name="add"></ion-icon>&nbsp;Compose</button>
-                             </a>
-                             </li>
+                                <a href="#" class="nav-link active">
+                                    <ion-icon name="mail-outline" class="align-text-bottom mr-3"></ion-icon>Inbox
+                                </a>
+                            </li>
                             <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/Home">
-                              <span data-feather="file"></span>
-                             <ion-icon name="file-tray-outline"></ion-icon>&nbsp;Inbox
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              <span data-feather="shopping-cart"></span>
-                              <ion-icon name="paper-plane-outline"></ion-icon>&nbsp;Sent
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">
-                              <span data-feather="users"></span>
-                              <ion-icon name="trending-up-outline"></ion-icon>&nbsp;Score
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                           <a class="nav-link" runat="server" href="~/UserList">
-                              <span data-feather="bar-chart-2"></span>
-                              <ion-icon name="people-outline"></ion-icon>&nbsp;Users
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                           <a class="nav-link" runat="server" href="~/DeptList">
-                              <span data-feather="bar-chart-2"></span>
-                              <ion-icon name="clipboard-outline"></ion-icon>&nbsp;Dept & Role
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                           <a class="nav-link" runat="server" href="~/DeptList">
-                              <span data-feather="bar-chart-2"></span>
-                              <ion-icon name="tablet-landscape-outline"></ion-icon>&nbsp;Card
-                            </a>
-                          </li>
+                                <a href="#" class="nav-link">
+                                    <ion-icon name="send-outline" class="align-text-bottom mr-3"></ion-icon>Sent
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <ion-icon name="trending-up-outline" class="align-text-bottom mr-3"></ion-icon>Score
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <ion-icon name="key-outline" class="align-text-bottom mr-3"></ion-icon>Account
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <ion-icon name="people-circle-outline" class="align-text-bottom mr-3"></ion-icon>Dep & Role
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <ion-icon name="file-tray-outline" class="align-text-bottom mr-3"></ion-icon>Card
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="container">
-                        <%--<div class="container body-content">--%>
-                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                                </asp:ContentPlaceHolder>
-                                <%--<hr />--%>
-                         <%--</div>--%>
-                    </div>
-                </div>
-             </div>
-         </div>   
+                </nav>
+                <main class="col-10 ml-auto">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                </main>
+            </div>
+        </div>
+       <%-- End Sidebar --%>
+
     </form>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>

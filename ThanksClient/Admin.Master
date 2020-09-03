@@ -65,37 +65,37 @@
                              </a>
                              </li>
                             <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/Home">
+                            <a class="nav-link" runat="server" href="Pages/Inbox.aspx">
                               <span data-feather="file"></span>
                              <ion-icon name="file-tray-outline"></ion-icon>&nbsp;Inbox
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="Pages/Send.aspx">
                               <span data-feather="shopping-cart"></span>
                               <ion-icon name="paper-plane-outline"></ion-icon>&nbsp;Sent
                             </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="Pages/Score.aspx">
                               <span data-feather="users"></span>
                               <ion-icon name="trending-up-outline"></ion-icon>&nbsp;Score
                             </a>
                           </li>
                           <li class="nav-item">
-                           <a class="nav-link" runat="server" href="~/UserList">
+                           <a class="nav-link" runat="server" href="Pages/UserList.aspx">
                               <span data-feather="bar-chart-2"></span>
                               <ion-icon name="people-outline"></ion-icon>&nbsp;Users
                             </a>
                           </li>
                           <li class="nav-item">
-                           <a class="nav-link" runat="server" href="~/DeptList">
+                           <a class="nav-link" runat="server" href="Pages/DeptList.aspx">
                               <span data-feather="bar-chart-2"></span>
                               <ion-icon name="clipboard-outline"></ion-icon>&nbsp;Dept & Role
                             </a>
                           </li>
                           <li class="nav-item">
-                           <a class="nav-link" runat="server" href="~/DeptList">
+                           <a class="nav-link" runat="server" href="Pages/CardList">
                               <span data-feather="bar-chart-2"></span>
                               <ion-icon name="tablet-landscape-outline"></ion-icon>&nbsp;Card
                             </a>

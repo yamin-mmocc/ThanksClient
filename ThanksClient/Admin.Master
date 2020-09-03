@@ -61,32 +61,32 @@
                     <div class="side-sticky pt-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">
+                                <a href="Inbox.aspx" class="nav-link active">
                                     <ion-icon name="mail-outline" class="align-text-bottom mr-3"></ion-icon>Inbox
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="Send.aspx" class="nav-link">
                                     <ion-icon name="send-outline" class="align-text-bottom mr-3"></ion-icon>Sent
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="Score.aspx" class="nav-link">
                                     <ion-icon name="trending-up-outline" class="align-text-bottom mr-3"></ion-icon>Score
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <ion-icon name="key-outline" class="align-text-bottom mr-3"></ion-icon>Account
+                                <a href="UserList.aspx" class="nav-link">
+                                    <ion-icon name="key-outline" class="align-text-bottom mr-3"></ion-icon>User List
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="DeptList.aspx" class="nav-link">
                                     <ion-icon name="people-circle-outline" class="align-text-bottom mr-3"></ion-icon>Dep & Role
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="CardList.aspx" class="nav-link">
                                     <ion-icon name="file-tray-outline" class="align-text-bottom mr-3"></ion-icon>Card
                                 </a>
                             </li>

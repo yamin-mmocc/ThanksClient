@@ -5,7 +5,7 @@
 #login{
     height:100vh;
 }
-#login .login-tcs{
+.login-tcs{
     background: var(--main);
 }
 
@@ -42,4 +42,13 @@
 }
 #tcs-sidebar ion-icon{
     font-size: 1.5rem;
+}
+/*myatsu added*/
+#btn-compose {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    width: 200px;
+    text-align: left;
 }

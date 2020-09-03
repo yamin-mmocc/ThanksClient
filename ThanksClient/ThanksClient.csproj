@@ -4134,6 +4134,14 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Model\Cards.cs" />
+    <Compile Include="Model\Departments.cs" />
+    <Compile Include="Model\LogReceives.cs" />
+    <Compile Include="Model\LogSends.cs" />
+    <Compile Include="Model\Messages.cs" />
+    <Compile Include="Model\Roles.cs" />
+    <Compile Include="Model\Status.cs" />
+    <Compile Include="Model\Users.cs" />
     <Compile Include="Pages\CardList.aspx.cs">
       <DependentUpon>CardList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

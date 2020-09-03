@@ -48,7 +48,7 @@
             <a class="navbar-brand col-2 mr-0 px-3">MMOCC-TCS</a>
             <ul class="navbar-nav px-3">
                 <li class="nav-item text-nowrap">
-                  <a class="nav-link" href="#">Sign out</a>
+                  <a class="nav-link" href="Login">Sign out</a>
                 </li>
               </ul>
         </nav>
@@ -61,32 +61,32 @@
                     <div class="side-sticky pt-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a href="Inbox.aspx" class="nav-link active">
+                                <a href="Admin_Inbox.aspx" class="nav-link active">
                                     <ion-icon name="mail-outline" class="align-text-bottom mr-3"></ion-icon>Inbox
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="Send.aspx" class="nav-link">
+                                <a href="Admin_Send.aspx" class="nav-link">
                                     <ion-icon name="send-outline" class="align-text-bottom mr-3"></ion-icon>Sent
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="Score.aspx" class="nav-link">
+                                <a href="Admin_Score.aspx" class="nav-link">
                                     <ion-icon name="trending-up-outline" class="align-text-bottom mr-3"></ion-icon>Score
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="UserList.aspx" class="nav-link">
+                                <a href="Admin_UserList.aspx" class="nav-link">
                                     <ion-icon name="key-outline" class="align-text-bottom mr-3"></ion-icon>User List
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="DeptAndRole.aspx" class="nav-link">
+                                <a href="Admin_Dept.aspx" class="nav-link">
                                     <ion-icon name="people-circle-outline" class="align-text-bottom mr-3"></ion-icon>Dep & Role
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="CardList.aspx" class="nav-link">
+                                <a href="Admin_Card.aspx" class="nav-link">
                                     <ion-icon name="file-tray-outline" class="align-text-bottom mr-3"></ion-icon>Card
                                 </a>
                             </li>

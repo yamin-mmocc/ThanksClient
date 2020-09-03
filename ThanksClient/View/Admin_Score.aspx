@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Score.aspx.cs" Inherits="ThanksClient.View.Score" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Admin_Score.aspx.cs" Inherits="ThanksClient.View.Score" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <p ><strong style="font-size:20px;">Filter By</strong> &nbsp; From
@@ -45,7 +45,7 @@
         </select>
     </p>
     <table class="table">
-      <thead>
+      <thead class="login-tcs text-white">
         <tr>
           <th scope="col">No</th>
           <th scope="col">Name</th>

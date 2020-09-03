@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ThanksClient.Pages
+namespace ThanksClient.User_pages
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class User_inbox : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

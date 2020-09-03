@@ -14,28 +14,27 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div id="login" class="d-flex justify-content-center align-items-center">
-            <div class="row shadow bg-white">
-                <div class="col-8 d-flex flex-column justify-content-center left px-3 login-tcs text-white">
-                    <h3>Myanmar OCC</h3>
-                    <h1>Thanks Card System</h1>
-                </div>
-                <div class="col-4 d-flex flex-column justify-content-center py-3">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <button type="submit" class="btn login-tcs text-white btn-block">Login</button>
-                    </form>
-                </div>
+
+    <div id="login" class="d-flex justify-content-center align-items-center">
+        <div class="row shadow bg-white">
+            <div class="col-8 d-flex flex-column justify-content-center left px-3 tcs-primary text-white">
+                <h3>Myanmar OCC</h3>
+                <h1>Thanks Card System</h1>
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-center py-3">
+                <form id="login_form" runat="server">
+                    <div class="form-group">
+                        <label for="login_email">Email address</label>
+                        <asp:TextBox ID="login_email" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <label for="login_password">Password</label>
+                        <asp:TextBox ID="login_password" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                    </div>
+                    <asp:LinkButton ID="login_btn" runat="server" CssClass="btn tcs-primary text-white btn-block">Login</asp:LinkButton>
+                </form>
             </div>
         </div>
-    </form>
+    </div>
 </body>
 </html>

@@ -7,9 +7,9 @@
     <title><%: Page.Title %> - Thanks Card System</title>
 
      <%---Bootstrap 4.5 --%>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <%-- Custom --%>
-    <link href="Content/Custom.css" rel="stylesheet" />
+    <link href="~/Content/Custom.css" rel="stylesheet" />
     
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -81,7 +81,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="DeptList.aspx" class="nav-link">
+                                <a href="DeptAndRole.aspx" class="nav-link">
                                     <ion-icon name="people-circle-outline" class="align-text-bottom mr-3"></ion-icon>Dep & Role
                                 </a>
                             </li>

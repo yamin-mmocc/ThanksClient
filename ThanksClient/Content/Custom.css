@@ -5,7 +5,7 @@
 #login{
     height:100vh;
 }
-#login .login-tcs{
+.tcs-primary, .btn .tcs-primary {
     background: var(--main);
 }
 

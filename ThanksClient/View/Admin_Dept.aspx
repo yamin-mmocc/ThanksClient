@@ -14,17 +14,17 @@
                 <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 </asp:GridView>
           </div>
-         <%--Role--%>
-         <div class="col-md-4">
-            <h1>
-                <div class="nav navbar-nav navbar-right">
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalAddRole"><ion-icon name="add"></ion-icon>&nbsp;Add New</button>
-                </div>Role&nbsp;
-            </h1>
-             <asp:GridView ID="GridView2" runat="server">
-             </asp:GridView>
-         </div>
-       </div>
+             <%--Role--%>
+             <div class="col-md-4">
+                <h1>
+                    <div class="nav navbar-nav navbar-right">
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalAddRole"><ion-icon name="add"></ion-icon>&nbsp;Add New</button>
+                    </div>Role&nbsp;
+                </h1>
+                 <asp:GridView ID="GridView2" runat="server">
+                 </asp:GridView>
+             </div>
+          </div>
     </div>
     <%--Department popup--%>
     <div class="modal fade" id="modalAddRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

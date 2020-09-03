@@ -5,8 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Thanks Card System</title>
-    <link href="Content/bootstrap.css" rel="stylesheet" />  <%-----added--%>
-    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />                  <%-- ---added--%>
+
+     <%---myatsu added--%>
+    <link href="Content/bootstrap.css" rel="stylesheet" />  
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />         
+    
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -30,6 +33,8 @@
                 <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <%--<asp:ScriptReference Name="ionicons.js" Assembly="System.Web" Path="~/lib/ionicons/ionicons.js" />--%>
+                
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
             </Scripts>
@@ -41,15 +46,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">MMOCC Thanks Card System</a> 
+                    <a class="navbar-brand" runat="server"><strong style="font-size:24px;">MMOCC-TCS</strong></a> 
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Home">Home <i class="fa fa-home"></i></a></li>
-                        <li><a runat="server" href="~/UserList">User List&nbsp;<i class="fas fa-user-friends"></i></a></li>
-                        <li><a runat="server" href="~/DeptList">Department List&nbsp;<i class="fas fa-briefcase"></i></a></li>
-                        <li><a runat="server" href="~/CardList">Card List&nbsp;<i class="fas fa-list-ul"></i></a></li> 
-                    </ul>
                     <div class="nav navbar-nav navbar-right">
                         <li><a runat="server" href="~/Login" style="font-size:17px"><strong>Logout&nbsp;<i class="fa fa-sign-out-alt" style="font-size:17px"></i></strong></a></li>    
                     </div>
@@ -62,32 +61,43 @@
                          <ul class="nav flex-column">
                             <li class="nav-item">
                             <a class="nav-link active" href="#">
-                            <span data-feather="home"></span>
-                                 Compose <span class="sr-only">(current)</span>
+                            <button type="button" class="btn btn-primary btn-lg"><ion-icon name="add"></ion-icon>&nbsp;Compose</button>
                              </a>
                              </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" runat="server" href="~/Home">
                               <span data-feather="file"></span>
-                              Inbox
+                             <ion-icon name="file-tray-outline"></ion-icon>&nbsp;Inbox
                             </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">
                               <span data-feather="shopping-cart"></span>
-                              Sent
+                              <ion-icon name="paper-plane-outline"></ion-icon>&nbsp;Sent
                             </a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">
                               <span data-feather="users"></span>
-                              Score
+                              <ion-icon name="trending-up-outline"></ion-icon>&nbsp;Score
                             </a>
                           </li>
                           <li class="nav-item">
-                           <a class="nav-link" href="#">
+                           <a class="nav-link" runat="server" href="~/UserList">
                               <span data-feather="bar-chart-2"></span>
-                              Users
+                              <ion-icon name="people-outline"></ion-icon>&nbsp;Users
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                           <a class="nav-link" runat="server" href="~/DeptList">
+                              <span data-feather="bar-chart-2"></span>
+                              <ion-icon name="clipboard-outline"></ion-icon>&nbsp;Dept & Role
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                           <a class="nav-link" runat="server" href="~/DeptList">
+                              <span data-feather="bar-chart-2"></span>
+                              <ion-icon name="tablet-landscape-outline"></ion-icon>&nbsp;Card
                             </a>
                           </li>
                         </ul>
@@ -95,16 +105,16 @@
                 </div>
                 <div class="col-md-8">
                     <div class="container">
-                        <div class="container body-content">
+                        <%--<div class="container body-content">--%>
                             <asp:ContentPlaceHolder ID="MainContent" runat="server">
                                 </asp:ContentPlaceHolder>
                                 <%--<hr />--%>
-                         </div>
+                         <%--</div>--%>
                     </div>
                 </div>
              </div>
          </div>   
     </form>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
-    
 </html>

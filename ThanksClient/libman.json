@@ -5,6 +5,10 @@
     {
       "library": "font-awesome@5.14.0",
       "destination": "lib/font-awesome/"
+    },
+    {
+      "library": "ionicons@5.1.2",
+      "destination": "lib/ionicons/"
     }
   ]
 }

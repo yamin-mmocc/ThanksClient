@@ -11,7 +11,7 @@ namespace ThanksClient
 {
 
 
-    public partial class DeptList
+    public partial class User_score
     {
     }
 }

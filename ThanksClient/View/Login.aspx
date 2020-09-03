@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="admin_form" runat="server">
         <div id="login" class="d-flex justify-content-center align-items-center">
             <div class="row shadow bg-white">
                 <div class="col-8 d-flex flex-column justify-content-center left px-3 login-tcs text-white">
